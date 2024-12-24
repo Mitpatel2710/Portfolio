@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import { useContactForm } from '../../hooks/useContactForm';
 import { Loader2 } from 'lucide-react';
 
+const initialFormState = {
+  name: '',
+  email: '',
+  subject: '',
+  message: ''
+};
+
 export function ContactForm() {
   const { handleSubmit, isLoading } = useContactForm();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
+  const [formData, setFormData] = useState(initialFormState);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
@@ -18,9 +20,13 @@ export function ContactForm() {
     }));
   };
 
+  const resetForm = () => {
+    setFormData(initialFormState);
+  };
+
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    handleSubmit(formData);
+    handleSubmit(formData, resetForm);
   };
 
   return (
