@@ -4,11 +4,11 @@ import { Github, Linkedin, Mail, MapPin, Calendar, Briefcase } from 'lucide-reac
 
 export function About() {
   return (
-    <div className="container mx-auto px-6">
+    <div className="container mx-auto px-4 md:px-6">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Profile Image */}
         <motion.div 
-          className="relative"
+          className="relative order-2 md:order-1"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -21,12 +21,12 @@ export function About() {
             />
           </div>
           <motion.div 
-            className="absolute -bottom-6 -right-6 w-64 h-64 bg-blue-50 rounded-full -z-10"
+            className="absolute -bottom-6 -right-6 w-48 md:w-64 h-48 md:h-64 bg-blue-50 rounded-full -z-10"
             animate={{ rotate: 360 }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           />
           <motion.div 
-            className="absolute -top-6 -left-6 w-48 h-48 bg-purple-50 rounded-full -z-10"
+            className="absolute -top-6 -left-6 w-32 md:w-48 h-32 md:h-48 bg-purple-50 rounded-full -z-10"
             animate={{ rotate: -360 }}
             transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
           />
@@ -34,7 +34,7 @@ export function About() {
 
         {/* Content */}
         <motion.div 
-          className="space-y-6"
+          className="space-y-6 order-1 md:order-2"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -46,18 +46,18 @@ export function About() {
           >
             About Me
           </motion.div>
-          
+
           <motion.h2 
-            className="text-4xl font-bold text-gray-900"
+            className="text-3xl md:text-4xl font-bold text-gray-900"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
             Mit Patel
           </motion.h2>
-
+          
           <motion.h2 
-            className="text-4xl font-bold text-gray-900"
+            className="text-3xl md:text-4xl font-bold text-gray-900"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
@@ -66,12 +66,12 @@ export function About() {
           </motion.h2>
           
           <motion.p 
-            className="text-lg text-gray-600"
+            className="text-base md:text-lg text-gray-600"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            Hi, I'm Mit Patel, a passionate Java Full Stack Developer with over 3 years of experience in designing, developing, and implementing robust and scalable enterprise applications.
+            Hi, I'm Mit Patel, a passionate Java Full Stack Developer with over 3+ years of experience in designing, developing, and implementing robust and scalable enterprise applications.
           </motion.p>
 
           <motion.p 
