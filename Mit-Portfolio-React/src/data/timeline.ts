@@ -3,8 +3,8 @@ import { TimelineItem } from '../types';
 export const experienceData: TimelineItem[] = [
   {
     year: 'Jan 2023 - Present',
+    organization: 'Unum, Remote',
     title: 'Java Full Stack Developer',
-    organization: 'Unum, TX',
     description: `• Working in an Agile environment and participating in requirement gathering, analysis, and implementation.
 
 • Configure applications using Spring Boot and used Spring Security for authentication and authorization purposes.
@@ -26,9 +26,9 @@ export const experienceData: TimelineItem[] = [
 • Develop SQL scripts for creating tables, Sequences, Triggers, and materialized views.`
   },
   {
-    year: 'March 2021 - Dec 2022',
+    year: 'Mar 2021 - Dec 2022',
+    organization: 'Bristol-Myers Squibb, Remote',
     title: 'Java Full Stack Developer',
-    organization: 'Bristol-Myers Squibb, TX',
     description: `• Worked on Waterfall methodology, and attended daily stand-up, showcase, and sprint retrospective meetings.
 
 • Developed architecture to use SpringMVC and Hibernate components wired together by Spring Framework and set up application server deployment environments.
@@ -53,19 +53,19 @@ export const experienceData: TimelineItem[] = [
 
 export const educationData: TimelineItem[] = [
   {
-    year: '2023',
+    year: 'Jan 2023 - Dec 2023',
     title: 'Master of Science in Computer Science',
     organization: 'Campbellsville University, KY - USA',
     description: 'Focused on advanced concepts in software engineering, data analysis, and system design. Led the university\'s coding club.',
   },
   {
-    year: '2022',
+    year: 'Jan 2020 - Dec 2022',
     title: 'Bachelor of Science in Computer Science',
     organization: 'The University of Texas at Dallas, TX - USA',
     description: 'Gained strong foundation in software engineering and problem-solving skills.',
   },
   {
-    year: '2019',
+    year: 'Jan 2019 - Dec 2019',
     title: 'Associate of Science in Computer Science',
     organization: 'Dallas College',
     description: 'Gaining essential skills in programming and information technology.',

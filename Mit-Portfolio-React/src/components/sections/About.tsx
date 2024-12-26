@@ -13,7 +13,7 @@ export function About() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="aspect-square rounded-2xl overflow-hidden">
+          <div className="rounded-2xl overflow-hidden w-48 h-48 md:w-64 md:h-64 mx-auto">
             <img
               src="../mit1.jpg"
               alt="Mit Patel"
@@ -21,12 +21,12 @@ export function About() {
             />
           </div>
           <motion.div 
-            className="absolute -bottom-6 -right-6 w-48 md:w-64 h-48 md:h-64 bg-blue-50 rounded-full -z-10"
+            className="absolute -bottom-6 -right-6 w-36 md:w-48 h-36 md:h-48 bg-blue-50 rounded-full -z-10"
             animate={{ rotate: 360 }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           />
           <motion.div 
-            className="absolute -top-6 -left-6 w-32 md:w-48 h-32 md:h-48 bg-purple-50 rounded-full -z-10"
+            className="absolute -top-6 -left-6 w-24 md:w-32 h-24 md:h-32 bg-purple-50 rounded-full -z-10"
             animate={{ rotate: -360 }}
             transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
           />
@@ -40,31 +40,14 @@ export function About() {
           transition={{ duration: 0.6 }}
         >
           <motion.div 
-            className="inline-block px-4 py-2 bg-blue-50 text-blue-600 rounded-full font-medium"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            className="text-4xl font-normal text-gray-900 text-center mb-12"
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
           >
             About Me
           </motion.div>
 
-          <motion.h2 
-            className="text-3xl md:text-4xl font-bold text-gray-900"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-          >
-            Mit Patel
-          </motion.h2>
-          
-          <motion.h2 
-            className="text-3xl md:text-4xl font-bold text-gray-900"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-          >
-            Java Full Stack Developer
-          </motion.h2>
-          
           <motion.p 
             className="text-base md:text-lg text-gray-600"
             initial={{ opacity: 0 }}

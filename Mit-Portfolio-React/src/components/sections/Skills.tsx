@@ -13,12 +13,12 @@ export function Skills() {
   return (
     <div className="container mx-auto px-6">
       <motion.h2 
-        className="text-4xl font-bold text-gray-900 text-center mb-12"
+        className="text-4xl font-normal text-gray-900 text-center mb-12"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        Technical Skills
+        Skills
       </motion.h2>
       <StaggerContainer>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
@@ -40,7 +40,7 @@ export function Skills() {
                     className: "w-6 h-6 text-blue-600"
                   })}
                 </motion.div>
-                <h3 className="text-lg font-bold text-gray-900">
+                <h3 className="text-lg font-normal text-gray-900">
                   {category.title}
                 </h3>
               </div>
