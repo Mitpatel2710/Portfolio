@@ -1,5 +1,3 @@
-import { SkillCategory } from '../types';
-
 export const skillCategories: SkillCategory[] = [
   {
     title: 'Methodologies',
@@ -7,7 +5,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: 'Programming Languages',
-    skills: ['Java', 'SQL']
+    skills: ['Java', 'SQL', 'JavaScript', 'TypeScript', 'Python', 'C/C++']
   },
   {
     title: 'Frameworks & Libraries',
@@ -18,7 +16,7 @@ export const skillCategories: SkillCategory[] = [
       'JSF',
       'Angular',
       'React.js',
-      'Node.js'
+      'Node.js',
     ]
   },
   {
@@ -27,42 +25,44 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: 'Web Technologies',
-    skills: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'jQuery', 'Ajax', 'JSON', 'XML']
+    skills: ['HTML', 'CSS', 'Bootstrap', 'jQuery', 'Ajax', 'JSON', 'XML', 'Tailwind CSS']
   },
   {
-    title: 'Cloud Technologies',
-    skills: ['AWS (CloudFormation)']
+    title: 'Cloud & DevOps',
+    skills: [
+      'AWS',
+      'Microsoft Azure',
+      'Docker',
+      'Kubernetes',
+      'Rundeck',
+    ]
   },
   {
     title: 'CI/CD Tools',
-    skills: ['Jenkins', 'GitLab CI/CD', 'Docker', 'Kubernetes']
+    skills: ['Jenkins', 'GitLab CI/CD', 'GitHub Actions']
+  },
+  {
+    title: 'APIs & Integrations',
+    skills: ['REST API', 'GraphQL', 'SOAP', 'OpenAPI/Swagger', 'OAuth 2.0', 'JWT']
   },
   {
     title: 'Databases',
     skills: ['MySQL', 'PostgreSQL', 'MongoDB']
   },
   {
-    title: 'Application Servers',
-    skills: ['Apache Tomcat', 'WebSphere']
-  },
-  {
-    title: 'Build & Deployment',
-    skills: ['Maven', 'Gradle', 'JUnit']
+    title: 'Build & Testing Tools',
+    skills: ['Maven', 'Gradle', 'JUnit', 'Mockito', 'SonarQube']
   },
   {
     title: 'Version Control',
     skills: ['Git', 'GitHub']
   },
   {
-    title: 'IDE & Development',
-    skills: ['IntelliJ IDEA', 'NetBeans', 'Eclipse']
-  },
-  {
-    title: 'Other Tools',
-    skills: ['UML', 'MS Visio']
+    title: 'IDEs & Development Tools',
+    skills: ['IntelliJ IDEA', 'Eclipse']
   },
   {
     title: 'Operating Systems',
-    skills: ['Windows', 'Linux']
+    skills: ['Windows', 'Linux', 'MacOS']
   }
 ];

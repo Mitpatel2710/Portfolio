@@ -33,8 +33,18 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
+          <motion.h1
+            className="text-4xl md:text-5xl font-bold text-white mb-8" // Changed from mb-8 to mb-4
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            MIT PATEL
+            <span className="block text-2xl md:text-3xl mt-2 text-gray-300">Software Engineer</span>
+          </motion.h1>
+
           <motion.div
-            className="flex flex-wrap justify-center gap-3 mb-8 md:mb-12"
+            className="flex flex-wrap justify-center gap-3 mb-4 md:mb-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
@@ -45,7 +55,7 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            className="space-y-4 md:space-y-6 mb-8 md:mb-12"
+            className="space-y-4 md:space-y-6 mb-4 md:mb-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}

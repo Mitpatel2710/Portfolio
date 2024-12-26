@@ -3,15 +3,29 @@ import { TimelineItem as TimelineItemType, TimelineProps } from '../types';
 
 function TimelineItem({ year, title, organization, description }: TimelineItemType) {
   return (
-    <div className="relative pl-8 pb-8">
-      <div className="absolute left-0 top-0 h-full w-[2px] bg-gray-200">
-        <div className="absolute left-[-5px] top-2 h-3 w-3 rounded-full bg-blue-500"></div>
+    <div className="relative pl-[270px] pb-8">
+      {/* Year on the left */}
+      <div className="absolute left-[-50px] top-2 text-sm font-semibold text-blue-600">
+        {year}
       </div>
-      <div className="pt-1">
-        <span className="text-sm font-semibold text-blue-500">{year}</span>
-        <h3 className="text-lg font-bold text-gray-900">{title}</h3>
+
+      {/* Vertical Timeline Line */}
+      <div className="absolute left-[220px] top-0 h-full w-[2px] bg-blue-500">
+        <div className="absolute left-[-6px] top-2 h-4 w-4 rounded-full bg-blue-500 ring-4 ring-blue-100"></div>
+      </div>
+
+      {/* Content Box */}
+      <div className="bg-white rounded-lg shadow-lg p-6 ml-[260px]">
         <p className="text-md font-medium text-gray-600">{organization}</p>
-        <p className="mt-2 text-gray-600">{description}</p>
+        <h3 className="text-lg font-bold text-gray-900">{title}</h3>
+        <div className="mt-3 text-gray-600 text-justify space-y-2">
+          {description.split('\n\n').map((point, i) => (
+            <p key={i} className="flex items-start">
+              <span className="mr-2">•</span>
+              <span>{point.trim().replace('• ', '')}</span>
+            </p>
+          ))}
+        </div>
       </div>
     </div>
   );
