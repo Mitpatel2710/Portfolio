@@ -33,11 +33,11 @@ export default function App() {
           <Skills />
         </section>
         
-        <section id="education" className="py-20">
-          <Education />
-        </section>
+        <section id="education" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+           <Education />
+         </section>
 
-        <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <section id="contact" className="py-20">
           <Contact />
         </section>
       </main>
