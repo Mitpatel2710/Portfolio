@@ -11,11 +11,11 @@ export function Projects() {
   return (
     <div className="container mx-auto px-6">
       <motion.h2
-        className="text-4xl font-bold text-gray-900 text-center mb-12"
+        className="text-4xl font-normal text-gray-900 text-center mb-12"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Featured Projects
+        Projects
       </motion.h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (

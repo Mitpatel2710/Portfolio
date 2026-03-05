@@ -17,7 +17,7 @@ function FeatureCard({ icon: Icon, title }: { icon: React.ElementType; title: st
 
 export function Hero() {
   const handleResumeClick = () => {
-    window.open('../Mit-Tech.pdf', '_blank', 'noopener,noreferrer');
+    window.open('../Mit_Patel_Resume-Latest.pdf', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -50,7 +50,7 @@ export function Hero() {
             transition={{ delay: 0.3 }}
           >
             <FeatureCard icon={Code2} title="Java Full Stack Developer" />
-            <FeatureCard icon={Timer} title="3+ Years of Experience" />
+            <FeatureCard icon={Timer} title="5+ Years of Experience" />
             <FeatureCard icon={Brain} title="Problem Solving" />
           </motion.div>
 

@@ -49,21 +49,31 @@ export function About() {
           </motion.div>
 
           <motion.p
-            className="text-sm md:text-lg text-gray-600"
+            className="text-sm md:text-base text-gray-600 leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            Hi, I'm Mit Patel, a passionate Java Full Stack Developer with over 3+ years of experience in designing, developing, and implementing robust and scalable enterprise applications.
+            Hi, I'm Mit Patel, a Senior Software Engineer and Java Full Stack Developer with ~5 years
+            of experience building scalable microservices, distributed systems, and cloud-native AWS
+            architectures using Spring Boot, React.js, and Angular for enterprise platforms. I've delivered
+            30%+ API performance improvements, RBAC/OAuth2 security systems, and CI/CD pipelines —
+            building applications that serve 10,000+ concurrent users with high availability at companies
+            like Unum and Bristol-Myers Squibb.
           </motion.p>
 
           <motion.p
-            className="text-sm md:text-base text-gray-600"
+            className="text-sm md:text-base text-gray-600 leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            I have a strong foundation in Java/J2EE technologies, including frameworks like Spring MVC, Spring Boot, and Hibernate. I specialize in building dynamic and responsive Single Page Applications (SPA's) using AngularJS, Node.js, and ReactJS.
+            Beyond traditional full stack work, I'm deeply passionate about AI automation — building
+            intelligent systems using n8n agentic workflows, OpenAI GPT-4, Google Gemini, and RAG
+            architecture that eliminate manual operations and drive real business impact. I hold an M.S.
+            in Computer Science from Campbellsville University and a B.S. from The University of Texas
+            at Dallas, and I'm always looking to work on challenging problems at the intersection of
+            scalable engineering and AI.
           </motion.p>
 
           <div className="space-y-2 md:space-y-3">
@@ -71,21 +81,21 @@ export function About() {
               className="flex items-center gap-2 text-gray-600 justify-center md:justify-start"
               whileHover={{ x: 5 }}
             >
-              <MapPin className="w-4 h-4 md:w-5 md:h-5 text-blue-500" />
+              <MapPin className="w-4 h-4 text-blue-500 shrink-0" />
               <span className="text-sm md:text-base">Dallas, TX</span>
             </motion.div>
             <motion.div
               className="flex items-center gap-2 text-gray-600 justify-center md:justify-start"
               whileHover={{ x: 5 }}
             >
-              <Calendar className="w-4 h-4 md:w-5 md:h-5 text-blue-500" />
-              <span className="text-sm md:text-base">3+ Years of Experience</span>
+              <Calendar className="w-4 h-4 text-blue-500 shrink-0" />
+              <span className="text-sm md:text-base">5+ Years of Experience</span>
             </motion.div>
             <motion.div
               className="flex items-center gap-2 text-gray-600 justify-center md:justify-start"
               whileHover={{ x: 5 }}
             >
-              <Briefcase className="w-4 h-4 md:w-5 md:h-5 text-blue-500" />
+              <Briefcase className="w-4 h-4 text-blue-500 shrink-0" />
               <span className="text-sm md:text-base">Available for Full-time Opportunities (Remote)</span>
             </motion.div>
           </div>
@@ -113,7 +123,7 @@ export function About() {
               <Linkedin className="w-5 h-5 md:w-6 md:h-6" />
             </motion.a>
             <motion.a
-              href="mailto:mit.p@mytechjobemail.com"
+              href="mailto:mitsoftdev27@gmail.com"
               className="p-2 md:p-3 bg-gray-50 text-gray-600 rounded-lg hover:bg-gray-100 hover:text-gray-900 transition-colors"
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.9 }}

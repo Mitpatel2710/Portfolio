@@ -6,8 +6,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'mit.p@mytechjobemail.com',
-    href: 'mailto:mit.p@mytechjobemail.com'
+    value: 'mitsoftdev27@gmail.com',
+    href: 'mailto:mitsoftdev27@gmail.com'
   },
   {
     icon: Phone,
