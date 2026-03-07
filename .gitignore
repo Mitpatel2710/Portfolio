@@ -1,1 +1,21 @@
-node_modules
+# dependencies
+node_modules/
+
+# build
+dist/
+build/
+.bolt/
+
+# environment
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+
+# mac
+.DS_Store
+
+# logs
+*.log
