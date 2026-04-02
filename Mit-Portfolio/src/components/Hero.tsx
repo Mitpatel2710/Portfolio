@@ -17,7 +17,7 @@ function FeatureCard({ icon: Icon, title }: { icon: React.ElementType; title: st
 
 export function Hero() {
   const handleResumeClick = () => {
-    window.open('../Mit_Patel_Resume-C-2.pdf', '_blank', 'noopener,noreferrer');
+    window.open('../Mit_Patel_Resume.pdf', '_blank', 'noopener,noreferrer');
   };
 
   return (
