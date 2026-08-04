@@ -27,14 +27,17 @@ export const skillCategories: SkillCategory[] = [
   {
     title: 'AI & Automation',
     skills: [
-      'n8n',
-      'OpenAI GPT-4',
+      'Claude',
+      'Copilot',
+      'LangChain',
+      'OpenAI',
       'Google Gemini',
       'LLM Integration',
       'RAG Architecture',
       'Vector Search',
       'Prompt Engineering',
       'Agentic Workflows',
+      'n8n'
     ]
   },
   {
